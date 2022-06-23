@@ -1,3 +1,4 @@
+# lint check
 name: golangci-lint
 on:
   push:
