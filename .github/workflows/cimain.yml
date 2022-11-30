@@ -41,7 +41,7 @@ jobs:
 #           uses: actions/checkout@v2
           env:
               ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-              ECR_REPOSITORY: golang-demo
+              ECR_REPOSITORY: demo_migration_ecr
               IMAGE_TAG: ${{ github.sha }}
           run: |
                 docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
